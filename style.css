@@ -22,7 +22,7 @@ color: gray;
  align-items:center;
  max-width:1440px;
  margin:0 auto;
- padding:60px 80px;
+ padding:60px;
 }
 .nav{display:flex;
  justify-content:space-between;
@@ -36,16 +36,69 @@ color: gray;
  align-items:center;
  max-width:1440px;
  margin:0 auto;
- padding:60px 80px;
+ padding:60px;
 }
 .banner-left{max-width:50%;}
 .banner-right img {
  width: 100%;
  height: auto;
 }
-.heading{font-size:2.5rem;}
+.heading{font-size: 3.5rem;}
 .description{
+  font-size:1.5rem;
  color: gray;
+}
+/*---plants-section---*/
+.plants-grid{display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:20px;
+}
+ .plants-section{max-width:1440px;
+   margin:0 auto;
+   padding:60px;
+   text-align:center;}
+  .plants-heading {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+ }
+.plants-description {
+  font-size:0.5rem;
+  color: gray;
+  margin-bottom: 3rem;
+ }
+.add-to-cart-button{font-color: white;}
+.add-to-cart-button {
+  background-color: #F26322;
+  color: #FFFFFF;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 700;
+  width: 100%;
+}
+
+.add-to-cart-button:hover {
+  background-color: gray;
+}
+.plant-image {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+.plant-name {
+  font-size: 1rem;
+  color: black;
+  margin-bottom: 0.5rem;
+}
+
+.plant-price {
+  font-size: 1rem;
+  font-weight:700;
+  color: black;
+  margin-bottom: 1rem;
 }
 /*Mobile Responsive*/
 @media screen and (max-width:576px) {
@@ -82,7 +135,8 @@ color: gray;
     font-size:0.75rem;
     padding:0;
   }
-
-  
+/*---plants-section---*/
+.plants-grid{grid-template-columns: repeat(2,1fr);}
 }
+.plants-heading{font-size:1.5rem;}
 
