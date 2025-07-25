@@ -13,19 +13,19 @@
 }
 .bg-whole{background-color:#f5f8ff;}
 /*---banner-section---*/
-.li{list-style:none;}
+.nav li{list-style:none;}
 .navbar a {text-decoration: none;
 color: gray;
 }
 .navbar{display:flex;
- justify-content:space-between;
- align-items:center;
+ justify-content:space-between; align-items:center;
  max-width:1440px;
  margin:0 auto;
  padding:60px;
 }
 .nav{display:flex;
  justify-content:space-between;
+ gap:20px;
 }
 .bold{
  font-weight:bold;}
@@ -58,15 +58,15 @@ color: gray;
    padding:60px;
    text-align:center;}
   .plants-heading {
-  font-size: 2.5rem;
+  font-size:2rem;
   margin-bottom: 1rem;
  }
 .plants-description {
-  font-size:0.5rem;
+  font-size:0.566rem;
   color: gray;
   margin-bottom: 3rem;
  }
-.add-to-cart-button{font-color: white;}
+.add-to-cart-button{color: white;}
 .add-to-cart-button {
   background-color: #F26322;
   color: #FFFFFF;
@@ -85,7 +85,7 @@ color: gray;
 .plant-image {
   width: 100%;
   height: auto;
-  border-radius: 4px;
+  border-radius:4px;
   margin-bottom: 1rem;
 }
 .plant-name {
@@ -100,6 +100,30 @@ color: gray;
   color: black;
   margin-bottom: 1rem;
 }
+/*---plants-lover-section---*/
+.plants-lover-section{display:flex;
+justify-content:space-between;
+  align-items:center;
+  gap:30px;
+  max-width:1440px;
+  margin:0 auto;
+  padding:60px;
+}
+.plants-lover-section img{width:100%;}
+.plants-lover-section li{list-style:disc;
+margin:0;
+border:solid red;
+}
+.list-container{color: gray;
+font-size:1rem;
+line-height:1.6;
+border:solid black;
+}
+.list-heading{font-size:3rem;
+  margin-bottom:20px;
+}
+
+
 /*Mobile Responsive*/
 @media screen and (max-width:576px) {
  /*banner-section*/ 
@@ -136,7 +160,15 @@ color: gray;
     padding:0;
   }
 /*---plants-section---*/
-.plants-grid{grid-template-columns: repeat(2,1fr);}
+.plants-grid{grid-template-columns: repeat(2,1fr);
 }
+.plants-section{padding:0;}
 .plants-heading{font-size:1.5rem;}
+/*---plants-lover-section---*/
+.plants-lover-section{flex-direction:column;
+padding:0;}
+.plants-lover-section img{margin-top:30px;}
+.list-container{font-size:0.5rem;}
+}
+
 
