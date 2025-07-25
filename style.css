@@ -45,7 +45,7 @@ color: gray;
 }
 .heading{font-size: 3.5rem;}
 .description{
-  font-size:1.5rem;
+  /*font-size:1.5rem;*/
  color: gray;
 }
 /*---plants-section---*/
@@ -58,13 +58,11 @@ color: gray;
    padding:60px;
    text-align:center;}
   .plants-heading {
-  font-size:2rem;
+  font-size:2.5rem;
   margin-bottom: 1rem;
  }
 .plants-description {
-  font-size:0.566rem;
   color: gray;
-  margin-bottom: 3rem;
  }
 .add-to-cart-button{color: white;}
 .add-to-cart-button {
@@ -89,13 +87,13 @@ color: gray;
   margin-bottom: 1rem;
 }
 .plant-name {
-  font-size: 1rem;
+  font-size: 0.5rem;
   color: black;
-  margin-bottom: 0.5rem;
+  font-weight:600px;
 }
 
 .plant-price {
-  font-size: 1rem;
+  font-size: 0.5rem;
   font-weight:700;
   color: black;
   margin-bottom: 1rem;
@@ -112,18 +110,71 @@ justify-content:space-between;
 .plants-lover-section img{width:100%;}
 .plants-lover-section li{list-style:disc;
 margin:0;
-border:solid red;
 }
 .list-container{color: gray;
 font-size:1rem;
 line-height:1.6;
-border:solid black;
 }
 .list-heading{font-size:3rem;
   margin-bottom:20px;
 }
+/*--- Join Section ---*/
+.join-section {
+  background-image: url('news-letter-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px;
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width:1440px;
+  margin:0 auto;
+  color: white; 
+  position: relative; 
+}
 
+.join-bunch-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:100%;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+}
 
+.join-bunch-heading {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content:center;
+  width:100%;
+}
+
+.email-input {
+  padding: 15px 20px;
+  border: none;
+  font-size: 1rem;
+  outline: none; 
+}
+
+.subscribe-button {
+  background-color: #F26322;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600; 
+}
 /*Mobile Responsive*/
 @media screen and (max-width:576px) {
  /*banner-section*/ 
@@ -134,7 +185,7 @@ border:solid black;
   }
 
   .navbar img {
-    height: 30px;}
+    height: 40px;}
  
  .nav a {
     font-size: 0.5rem;
@@ -169,6 +220,11 @@ border:solid black;
 padding:0;}
 .plants-lover-section img{margin-top:30px;}
 .list-container{font-size:0.5rem;}
+/*join-section*/
+  .join-section {
+    height: 300px;
+    border:solid black;
+   .join-bunch-heading{font-size:2rem;}
+  }
 }
-
 
